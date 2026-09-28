@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Raíces de Teotihuacán: experiencias, productos y cultura local.">
+<title>Raíces de Teotihuacán</title>
+<style>
+:root{
+  --earth:#6f452d; --sand:#f5efe5; --cream:#fffaf2; --dark:#29241f;
+  --accent:#a66a3f; --light:#ead8c1; --white:#fff;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--dark);background:var(--cream);line-height:1.6}
+a{color:inherit}
+.skip{position:absolute;left:-9999px;top:auto}
+.skip:focus{left:1rem;top:1rem;background:#fff;padding:.8rem;z-index:99;border:3px solid #000}
+header{background:var(--earth);color:#fff;position:sticky;top:0;z-index:20}
+.nav{max-width:1150px;margin:auto;display:flex;align-items:center;justify-content:space-between;padding:1rem 1.25rem}
+.logo{font-weight:800;font-size:1.2rem;letter-spacing:.4px}
+nav{display:flex;gap:.35rem;flex-wrap:wrap}
+nav a{padding:.55rem .8rem;text-decoration:none;border-radius:8px;font-weight:700}
+nav a:hover,nav a:focus{background:#fff;color:var(--earth);outline:3px solid #fff}
+.hero{
+  min-height:540px;display:flex;align-items:center;
+  background:linear-gradient(rgba(35,25,18,.58),rgba(35,25,18,.58)),
+  url("https://images.unsplash.com/photo-1518638150340-f706e86654de?auto=format&fit=crop&w=1800&q=85") center/cover;
+  color:#fff;
+}
+.hero-inner{max-width:1150px;width:100%;margin:auto;padding:5rem 1.25rem}
+.kicker{font-weight:800;text-transform:uppercase;letter-spacing:2px}
+h1{font-size:clamp(2.5rem,6vw,5rem);line-height:1.05;margin:.4rem 0 1rem}
+.hero p{max-width:650px;font-size:1.2rem}
+.btn{display:inline-block;background:var(--accent);color:#fff;text-decoration:none;padding:.9rem 1.2rem;border-radius:9px;font-weight:800;border:2px solid var(--accent);margin:.4rem .4rem .4rem 0}
+.btn:hover,.btn:focus{background:#fff;color:var(--earth);outline:3px solid #fff}
+.btn.secondary{background:#fff;color:var(--earth);border-color:#fff}
+main section{max-width:1150px;margin:auto;padding:4rem 1.25rem}
+.section-title{text-align:center;max-width:760px;margin:0 auto 2rem}
+.section-title h2{font-size:2.2rem;margin:.2rem 0}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.2rem}
+.card{background:#fff;border:1px solid #dfd3c4;border-radius:14px;overflow:hidden;box-shadow:0 5px 18px rgba(0,0,0,.06)}
+.card .photo{height:170px;background:var(--light);display:flex;align-items:center;justify-content:center;font-size:3.2rem}
+.card-content{padding:1.2rem}
+.card h3{margin-top:0}
+.band{background:var(--sand);max-width:none}
+.band-inner{max-width:1150px;margin:auto;padding:4rem 1.25rem}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:2rem;align-items:center}
+.highlight{background:var(--earth);color:#fff;border-radius:16px;padding:2rem}
+ul{padding-left:1.2rem}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+.step{background:#fff;border-left:5px solid var(--accent);padding:1.2rem;border-radius:10px}
+form{max-width:700px;margin:auto;background:#fff;padding:1.5rem;border-radius:14px;border:1px solid #dfd3c4}
+label{font-weight:800;display:block;margin:.8rem 0 .3rem}
+input,select,textarea{width:100%;padding:.85rem;border:2px solid #8d8175;border-radius:8px;font:inherit;background:#fff}
+input:focus,select:focus,textarea:focus{outline:3px solid #d8a77e;border-color:var(--earth)}
+textarea{min-height:130px}
+footer{background:#29241f;color:#fff;text-align:center;padding:2rem 1.25rem}
+.notice{background:#fff3cd;border:1px solid #b28a2b;padding:1rem;border-radius:10px}
+@media(max-width:850px){
+ .grid{grid-template-columns:1fr 1fr}.two{grid-template-columns:1fr}.steps{grid-template-columns:1fr}
+ .nav{align-items:flex-start;gap:.7rem;flex-direction:column}
+}
+@media(max-width:520px){
+ .grid{grid-template-columns:1fr}
+ nav a{padding:.45rem .55rem;font-size:.9rem}
+ .hero{min-height:500px}
+}
+@media(prefers-reduced-motion:reduce){
+ html{scroll-behavior:auto}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#contenido">Saltar al contenido principal</a>
+
+<header>
+  <div class="nav">
+    <div class="logo" aria-label="Raíces de Teotihuacán">RAÍCES DE TEOTIHUACÁN</div>
+    <nav aria-label="Navegación principal">
+      <a href="#inicio">Inicio</a>
+      <a href="#experiencias">Experiencias</a>
+      <a href="#productos">Productos</a>
+      <a href="#comunidad">Comunidad</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </div>
+</header>
+
+<main id="contenido">
+<section id="inicio" class="hero">
+  <div class="hero-inner">
+    <div class="kicker">Turismo que beneficia a nuestra comunidad</div>
+    <h1>Conoce Teotihuacán a través de las personas que le dan vida.</h1>
+    <p>Descubre gastronomía, artesanías, tradiciones y experiencias creadas por habitantes de nuestra comunidad.</p>
+    <a class="btn" href="#experiencias">Explorar experiencias</a>
+    <a class="btn secondary" href="#comunidad">Conocer el proyecto</a>
+  </div>
+</section>
+
+<section aria-labelledby="bienvenida">
+  <div class="section-title">
+    <h2 id="bienvenida">Mucho más que una visita</h2>
+    <p>Teotihuacán también vive en sus familias, sus sabores, sus artesanos y las historias que pasan de generación en generación.</p>
+  </div>
+  <div class="two">
+    <div>
+      <h3>Una experiencia local</h3>
+      <p>Raíces de Teotihuacán conecta a visitantes con habitantes que ofrecen actividades y productos locales.</p>
+      <p>El objetivo es que el turismo genere oportunidades económicas para más personas de la comunidad.</p>
+    </div>
+    <div class="highlight">
+      <h3>¿Qué encontrarás?</h3>
+      <ul>
+        <li>Experiencias culturales</li>
+        <li>Gastronomía local</li>
+        <li>Artesanías y productos</li>
+        <li>Historias y tradiciones</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="experiencias" class="band" aria-labelledby="titulo-exp">
+<div class="band-inner">
+  <div class="section-title">
+    <h2 id="titulo-exp">Experiencias</h2>
+    <p>Conoce algunas actividades que pueden formar parte de la red comunitaria.</p>
+  </div>
+  <div class="grid">
+    <article class="card"><div class="photo" role="img" aria-label="Representación de artesanía local">🎨</div><div class="card-content"><h3>Artesanía</h3><p>Conoce técnicas y participa en talleres realizados por artesanos locales.</p><a href="#contacto">Solicitar información</a></div></article>
+    <article class="card"><div class="photo" role="img" aria-label="Representación de gastronomía local">🌮</div><div class="card-content"><h3>Gastronomía</h3><p>Descubre sabores, recetas y productos representativos de la comunidad.</p><a href="#contacto">Solicitar información</a></div></article>
+    <article class="card"><div class="photo" role="img" aria-label="Representación de cultura local">🏺</div><div class="card-content"><h3>Cultura</h3><p>Escucha historias y conoce tradiciones desde la perspectiva de sus habitantes.</p><a href="#contacto">Solicitar información</a></div></article>
+    <article class="card"><div class="photo" role="img" aria-label="Representación de productos locales">🛍️</div><div class="card-content"><h3>Productos locales</h3><p>Encuentra productos elaborados por emprendedores y productores de Teotihuacán.</p><a href="#contacto">Solicitar información</a></div></article>
+  </div>
+</div>
+</section>
+
+<section id="productos" aria-labelledby="titulo-prod">
+  <div class="section-title">
+    <h2 id="titulo-prod">Productos de nuestra comunidad</h2>
+    <p>Una muestra de las categorías que pueden integrarse al catálogo.</p>
+  </div>
+  <div class="grid">
+    <article class="card"><div class="card-content"><h3>Artesanías</h3><p>Piezas elaboradas por manos locales.</p></div></article>
+    <article class="card"><div class="card-content"><h3>Alimentos</h3><p>Productos y sabores de productores de la zona.</p></div></article>
+    <article class="card"><div class="card-content"><h3>Recuerdos</h3><p>Artículos inspirados en la identidad de Teotihuacán.</p></div></article>
+    <article class="card"><div class="card-content"><h3>Experiencias</h3><p>Actividades que pueden reservarse con participantes locales.</p></div></article>
+  </div>
+</section>
+
+<section id="comunidad" class="band" aria-labelledby="titulo-com">
+<div class="band-inner">
+  <div class="section-title">
+    <h2 id="titulo-com">La comunidad es el corazón</h2>
+    <p>El proyecto busca que los habitantes participen activamente en la cadena de valor del turismo.</p>
+  </div>
+  <div class="steps">
+    <div class="step"><h3>1. Participa</h3><p>Productores, artesanos y prestadores de servicios se integran a la red.</p></div>
+    <div class="step"><h3>2. Comparte</h3><p>Cada participante ofrece una experiencia o producto al visitante.</p></div>
+    <div class="step"><h3>3. Crece</h3><p>Los ingresos y la visibilidad pueden abrir nuevas oportunidades para la comunidad.</p></div>
+  </div>
+</div>
+</section>
+
+<section id="contacto" aria-labelledby="titulo-contacto">
+  <div class="section-title">
+    <h2 id="titulo-contacto">Contáctanos</h2>
+    <p>¿Quieres conocer una experiencia o participar como productor?</p>
+  </div>
+  <form onsubmit="return enviarFormulario(event)">
+    <label for="nombre">Nombre</label>
+    <input id="nombre" name="nombre" autocomplete="name" required>
+    <label for="correo">Correo electrónico</label>
+    <input id="correo" name="correo" type="email" autocomplete="email" required>
+    <label for="interes">¿Qué te interesa?</label>
+    <select id="interes" name="interes">
+      <option>Experiencias</option>
+      <option>Productos locales</option>
+      <option>Participar como productor</option>
+      <option>Otra consulta</option>
+    </select>
+    <label for="mensaje">Mensaje</label>
+    <textarea id="mensaje" name="mensaje" required></textarea>
+    <button class="btn" type="submit">Enviar mensaje</button>
+    <p id="resultado" class="notice" role="status" aria-live="polite" hidden></p>
+  </form>
+</section>
+</main>
+
+<footer>
+  <strong>Raíces de Teotihuacán</strong>
+  <p>Turismo que beneficia a nuestra comunidad.</p>
+  <p>Maqueta académica — Proyecto de negocio inclusivo.</p>
+</footer>
+
+<script>
+function enviarFormulario(e){
+  e.preventDefault();
+  const nombre=document.getElementById('nombre').value.trim();
+  const r=document.getElementById('resultado');
+  r.hidden=false;
+  r.textContent='Gracias, '+nombre+'. Tu mensaje fue registrado en esta maqueta. Para una versión real se conectaría a un servicio de formularios.';
+  e.target.reset();
+  return false;
+}
+</script>
+</body>
+</html>
